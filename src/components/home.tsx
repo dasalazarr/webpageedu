@@ -3,74 +3,17 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 import HeroSection from "./HeroSection";
 import CaseStudy from "./CaseStudy";
+import RealUseCases from "./RealUseCases";
 import BenefitsSection from "./BenefitsSection";
 import ContactForm from "./ContactForm";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <h1 className="text-xl font-bold text-blue-600">UniAssist AI</h1>
-          </div>
-          <div className="hidden md:flex space-x-6">
-            <a
-              href="#solution"
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Nuestra Solución
-            </a>
-            <a
-              href="#case-study"
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Caso Ecotec
-            </a>
-            <a
-              href="#benefits"
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Beneficios
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Cómo Funciona
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              Contacto
-            </a>
-          </div>
-          <div className="md:hidden">
-            {/* Mobile menu button - simplified for scaffolding */}
-            <button className="text-gray-700">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </nav>
+
 
       {/* Hero Section */}
-      <section className="pt-20">
+      <section>
         <HeroSection />
       </section>
 
@@ -244,22 +187,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-blue-600 text-white p-4 rounded-full shadow-lg">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                  />
-                </svg>
-              </div>
+
             </motion.div>
           </div>
         </div>
@@ -268,6 +196,11 @@ const Home = () => {
       {/* Case Study Section */}
       <section id="case-study" className="py-16">
         <CaseStudy />
+      </section>
+
+      {/* Real Use Cases Section */}
+      <section id="real-use-cases" className="pt-16 pb-0">
+        <RealUseCases />
       </section>
 
       {/* Benefits Section */}
@@ -462,10 +395,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <a
-                    href="mailto:info@uniassist.ai"
+                    href="mailto:diego_salazar@outlook.com"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    info@uniassist.ai
+                    diego_salazar@outlook.com
                   </a>
                 </div>
 
@@ -485,10 +418,10 @@ const Home = () => {
                     </svg>
                   </div>
                   <a
-                    href="tel:+593912345678"
+                    href="tel:+593984074389"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
-                    +593 91 234 5678
+                    +593 98 407 4389
                   </a>
                 </div>
               </div>
@@ -511,7 +444,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h2 className="text-xl font-bold text-white">UniAssist AI</h2>
+              <h2 className="text-xl font-bold text-white">Khipu AI</h2>
               <p className="text-sm mt-1">
                 Transformando la comunicación universitaria con IA
               </p>
@@ -527,7 +460,7 @@ const Home = () => {
           </div>
           <div className="border-t border-gray-700 mt-6 pt-6 text-sm text-center">
             <p>
-              &copy; {new Date().getFullYear()} UniAssist AI. Todos los derechos
+              &copy; {new Date().getFullYear()} Khipu AI. Todos los derechos
               reservados.
             </p>
           </div>
@@ -536,7 +469,7 @@ const Home = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/593912345678"
+        href="https://wa.me/593984074389"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-40"

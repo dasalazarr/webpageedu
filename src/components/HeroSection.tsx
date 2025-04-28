@@ -61,15 +61,19 @@ const HeroSection = ({
             {description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 h-auto text-lg"
+            <a
+              href="https://wa.link/zjujzg"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {ctaText}
-            </Button>
-            <p className="text-sm text-gray-600">
-              o prueba nuestro asistente ahora
-            </p>
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 h-auto text-lg"
+              >
+                {ctaText}
+              </Button>
+            </a>
+
           </div>
         </motion.div>
 
@@ -80,28 +84,12 @@ const HeroSection = ({
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="text-center mb-4">
-              <h3 className="font-medium text-gray-900">Prueba nuestro MVP</h3>
-              <p className="text-sm text-gray-600">
-                Escanea el código QR con tu cámara
-              </p>
-            </div>
-            <div className="w-48 h-48 md:w-64 md:h-64 relative">
-              <img
-                src={qrCodeUrl}
-                alt="Código QR para probar el asistente de WhatsApp"
-                className="w-full h-full object-contain"
-              />
-              <div className="absolute bottom-2 right-2">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                  alt="Logo de WhatsApp"
-                  className="w-8 h-8"
-                />
-              </div>
-            </div>
-          </div>
+            <img
+              src="/resources/header_universidad.svg"
+              alt="Universidad Header"
+              className="w-full h-auto max-w-none object-contain min-h-[400px]"
+              style={{ height: "100%" }}
+            />
         </motion.div>
       </div>
 

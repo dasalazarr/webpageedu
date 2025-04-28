@@ -115,25 +115,15 @@ const CaseStudy = ({
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="pt-6">
-                <blockquote className="border-l-4 border-primary pl-4 italic">
-                  <p className="text-gray-700 mb-4">"{testimonial.quote}"</p>
-                  <footer>
-                    <p className="font-medium">{testimonial.author}</p>
-                    <p className="text-sm text-gray-600">
-                      {testimonial.position}
-                    </p>
-                  </footer>
-                </blockquote>
-              </CardContent>
-            </Card>
+
           </div>
         </div>
 
         <div className="text-center">
           <a
-            href="#contact"
+            href="https://wa.link/zjujzg"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           >
             Descubre cómo implementarlo en tu universidad

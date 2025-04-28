@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Clock, BarChart3, Calendar, Bell, Lightbulb } from "lucide-react";
+import { Clock, BarChart3, Calendar, Bell, Lightbulb, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface BenefitCardProps {
@@ -78,6 +78,12 @@ const BenefitsSection = () => {
       description:
         "Posicionamiento como institución tecnológicamente avanzada, mejorando la percepción de la universidad entre estudiantes actuales y potenciales.",
       metric: "Aumento del 40% en satisfacción",
+    },
+    {
+      icon: <ShieldCheck className="h-6 w-6" />,
+      title: "Seguridad y Privacidad",
+      description: "Protección de datos sensibles y cumplimiento de normativas de privacidad.",
+      metric: "100% cifrado de extremo a extremo",
     },
   ];
 

@@ -177,10 +177,10 @@ const ContactForm = ({ className = "" }: ContactFormProps) => {
         <p className="text-center">
           También puedes contactarnos directamente a través de{" "}
           <a
-            href="mailto:contacto@asistente-ia.com"
+            href="mailto:diego_salazar@outlook.com"
             className="text-primary hover:underline"
           >
-            contacto@asistente-ia.com
+            diego_salazar@outlook.com
           </a>
         </p>
         <p className="mt-2">
